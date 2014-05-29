@@ -23,7 +23,7 @@ public class App {
                 while (Keyboard.next()) {
                     char c = Keyboard.getEventCharacter();
                     if (c != 0) {
-                        System.out.println(c);
+                        System.out.println(String.valueOf(Keyboard.getEventKeyState())+" :"+c);
                     }
                 }
                 Display.update();
